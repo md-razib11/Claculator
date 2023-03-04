@@ -1,0 +1,60 @@
+body {
+
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    width: 400px; /* you can change the value to the desired width */
+    height: 600px; /* you can change the value to the desired height */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .display {
+    background-color: lightblue;
+    color: white;
+    font-size: 36px;
+    height: 120px;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    font-size: 24px;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    background-color: darkgray;
+    color: white;
+  }
+  
+  button[value='C'] {
+    background-color: orangered;
+  }
+  
+  button[value='='] {
+    background-color: green;
+  }
+  
+  .operators button {
+    background-color: lightblue;
+  }
+  
